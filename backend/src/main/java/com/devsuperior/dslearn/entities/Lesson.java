@@ -35,7 +35,7 @@ public abstract class Lesson implements Serializable {
 	@JoinColumn(name = "section_id")
 	private Section section;
 	
-	@OneToMany(mappedBy = "enrollment")
+	@OneToMany(mappedBy = "lesson")
 	private List<Deliver> deliveries = new ArrayList<>();
 	
 	@ManyToMany
